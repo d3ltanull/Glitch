@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас — GLITCH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              electric: "#00c8ff",
+              acid: "#c45cff",
+              toxic: "#39ff14",
+              promo: "#ff6b35",
+            },
+            fontFamily: {
+              sans: [
+                "JetBrains Mono",
+                "ui-monospace",
+                "SFMono-Regular",
+                "Menlo",
+                "monospace",
+              ],
+              heading: ["Unbounded", "system-ui", "Segoe UI", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-sans text-zinc-200">
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true">
+      <span class="cursor-ring__refraction" aria-hidden="true"></span>
+    </div>
+
+    <header
+      class="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-2xl"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-5 py-3.5 md:gap-6 md:px-8 md:py-4"
+      >
+        <a
+          href="index.html"
+          class="cursor-hover shrink-0 font-heading text-sm font-bold tracking-tight text-white md:text-base"
+        >
+          GLITCH — GameDev школа
+        </a>
+        <nav
+          class="hidden items-center gap-6 font-sans lg:gap-8 md:flex"
+          aria-label="Основная навигация"
+        >
+          <a href="courses.html" class="nav-link text-sm">Курсы</a>
+          <a href="about.html" class="nav-link text-sm">О нас</a>
+          <a href="media.html" class="nav-link text-sm">Медиа</a>
+          <a href="cabinet.html" class="nav-link text-sm">Кабинет</a>
+        </nav>
+        <div class="flex shrink-0 items-center gap-2 md:gap-3">
+          <a href="cabinet.html" class="btn-header-login cursor-hover text-xs md:text-sm">Вход</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24 pb-24">
+      <section class="border-b border-white/10 px-5 py-16 md:px-8">
+        <div class="mx-auto max-w-4xl text-center">
+          <h1 class="distort-headline text-4xl font-extrabold text-white md:text-5xl">
+            Миссия GLITCH
+          </h1>
+          <p class="reveal-up mt-8 text-xl leading-relaxed text-zinc-400">
+            Мы верим, что игры создаются пересечением дисциплин. Наша миссия — дать
+            студентам не только навыки, но и язык совместной работы: чтобы
+            программист понимал задачу художника, а маркетолог — ценность геймплея.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-5 py-20 md:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal-up mb-12 max-w-2xl">
+            <h2 class="text-3xl font-bold text-white">История школы</h2>
+            <p class="mt-4 text-zinc-400">
+              GLITCH вырос из небольшого клуба разработчиков, которые проводили
+              ночные джемы и открытые разборы билдов. Со временем формат стал
+              системным: появились кураторы, дорожные карты и единая экосистема
+              курсов.
+            </p>
+          </div>
+          <div class="reveal-stagger grid gap-6 md:grid-cols-3">
+            <div class="glass-panel p-6">
+              <div class="relative z-10">
+                <p class="text-sm font-bold text-electric">2019</p>
+                <h3 class="mt-2 font-semibold text-white">Первые интенсивы</h3>
+                <p class="mt-2 text-sm text-zinc-400">
+                  Онлайн-воркшопы по Unity и Blender для 40 человек. Главный инсайт:
+                  студентам нужен живой цикл обратной связи, а не длинные видео.
+                </p>
+              </div>
+            </div>
+            <div class="glass-panel p-6">
+              <div class="relative z-10">
+                <p class="text-sm font-bold text-acid">2022</p>
+                <h3 class="mt-2 font-semibold text-white">Сквозные команды</h3>
+                <p class="mt-2 text-sm text-zinc-400">
+                  Запускаем смешанные потоки: арт, код и дизайн ведут один проект.
+                  Появляется культура ревью и общих демо.
+                </p>
+              </div>
+            </div>
+            <div class="glass-panel p-6">
+              <div class="relative z-10">
+                <p class="text-sm font-bold text-toxic">2026</p>
+                <h3 class="mt-2 font-semibold text-white">Экосистема GLITCH</h3>
+                <p class="mt-2 text-sm text-zinc-400">
+                  Кабинет, медиа и партнёрские митапы. Фокус — трудоустройство и
+                  портфолио, которое можно защищать на собеседованиях.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-white/10 px-5 py-20 md:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal-up mb-12">
+            <h2 class="text-3xl font-bold text-white">Ключевые лица</h2>
+            <p class="mt-4 max-w-2xl text-zinc-400">
+              Заглушки вместо фотографий — но роли и зоны ответственности настоящие
+              для структуры школы.
+            </p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="reveal-up glass-panel accent-border-programming p-8">
+              <div class="relative z-10 flex flex-col gap-4 md:flex-row md:items-start">
+                <div
+                  class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-electric/40 bg-electric/10 text-sm font-bold text-electric"
+                >
+                  ДК
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Директор курсов</h3>
+                  <p class="mt-1 text-sm text-electric">«Текстовый блок · имя»</p>
+                  <p class="mt-4 text-sm leading-relaxed text-zinc-400">
+                    Отвечает за целостность программ и связность модулей между
+                    направлениями. Держит планку качества ревью и обновляет силлабус
+                    раз в квартал.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="reveal-up glass-panel accent-border-art p-8">
+              <div class="relative z-10 flex flex-col gap-4 md:flex-row md:items-start">
+                <div
+                  class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-acid/40 bg-acid/10 text-sm font-bold text-acid"
+                >
+                  ГА
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Глава по арту</h3>
+                  <p class="mt-1 text-sm text-acid">«Текстовый блок · имя»</p>
+                  <p class="mt-4 text-sm leading-relaxed text-zinc-400">
+                    Выстраивает визуальную линейку: от фундамента по 3D до стилизации
+                    под жанр. Подключается к совместным защитам проектов.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="reveal-up glass-panel accent-border-design p-8">
+              <div class="relative z-10 flex flex-col gap-4 md:flex-row md:items-start">
+                <div
+                  class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-toxic/40 bg-toxic/10 text-sm font-bold text-toxic"
+                >
+                  ВП
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Ведущий продюсер</h3>
+                  <p class="mt-1 text-sm text-toxic">«Текстовый блок · имя»</p>
+                  <p class="mt-4 text-sm leading-relaxed text-zinc-400">
+                    Синхронизирует сроки потоков, спикеров и внешних партнёров.
+                    Следит, чтобы у студентов оставалось «воздух» между спринтами.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="reveal-up glass-panel accent-border-marketing p-8">
+              <div class="relative z-10 flex flex-col gap-4 md:flex-row md:items-start">
+                <div
+                  class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-promo/40 bg-promo/10 text-sm font-bold text-promo"
+                >
+                  МЛ
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Медиа и комьюнити</h3>
+                  <p class="mt-1 text-sm text-promo">«Текстовый блок · имя»</p>
+                  <p class="mt-4 text-sm leading-relaxed text-zinc-400">
+                    Курирует блог, подкасты и открытые эфиры. Превращает успехи
+                    студентов в истории, которые вдохновляют новые наборы.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <blockquote
+            class="reveal-up mt-16 glass-panel border-white/15 p-8 text-center md:p-12"
+          >
+            <p class="relative z-10 text-lg italic text-zinc-300 md:text-xl">
+              «Мы не учим “смотреть видео”. Мы учим поставлять результат в команде —
+              как в настоящей студии.»
+            </p>
+            <footer class="relative z-10 mt-4 text-sm text-zinc-500">
+              — Командное кредо GLITCH
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-5 py-12 md:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div
+          class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+        >
+          <div class="max-w-md">
+            <p class="font-heading font-semibold text-white">GLITCH — школа разработки игр</p>
+            <p class="mt-2 font-sans text-sm text-zinc-500">
+              Онлайн-формат · Менторство · Проекты для портфолио
+            </p>
+          </div>
+          <div class="flex flex-col gap-8 sm:flex-row sm:gap-14">
+            <div>
+              <p class="mb-3 font-heading text-xs font-medium uppercase tracking-wider text-zinc-500">
+                Навигация
+              </p>
+              <div class="flex flex-wrap gap-x-6 gap-y-2 font-sans text-sm">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="courses.html" class="nav-link">Каталог</a>
+                <a href="media.html" class="nav-link">Медиа</a>
+                <a href="cabinet.html" class="nav-link">Кабинет</a>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 font-heading text-xs font-medium uppercase tracking-wider text-zinc-500">
+                Соцсети
+              </p>
+              <div class="flex flex-wrap items-center gap-2">
+                <a
+                  href="https://t.me/+5jlz7qYv0Vc1OThi"
+                  class="footer-social cursor-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Telegram"
+                >
+                  <i data-lucide="send" class="h-4 w-4"></i>
+                </a>
+                <a
+                  href="https://vk.ru/club237011052"
+                  class="footer-social cursor-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ВКонтакте"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.196c0-.254.102-.491.593-.491h1.744c.441 0 .61.203.78.678.863 2.456 2.303 4.607 2.896 4.607.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.441-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.135.813-.542 1.253-1.405 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.254 1.219-2.032 3.896-2.032 3.896-.204.339-.271.508 0 .905.203.271.864 1.016 1.304 1.93.44.896.593 1.66.593 2.202 0 .203-.102.491-.593.491z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.youtube.com/@glitchschool"
+                  class="footer-social cursor-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <i data-lucide="youtube" class="h-4 w-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
