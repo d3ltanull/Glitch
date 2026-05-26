@@ -180,9 +180,57 @@ body.mobile-nav-open .mobile-nav {
   justify-content: center;
 }
 
-/* Секции курсов: декоративные блюры не выходят за viewport */
+html {
+  overflow-x: hidden;
+}
+
 .course-hero-section {
   overflow: hidden;
+}
+
+body[data-accent] main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body[data-accent] main > section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body[data-accent] main .mx-auto {
+  min-width: 0;
+  max-width: 100%;
+}
+
+body[data-accent] main .grid {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+body[data-accent] main .grid > * {
+  min-width: 0;
+}
+
+body[data-accent] h1.distort-headline {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+body[data-accent] .course-module__head {
+  min-width: 0;
+}
+
+body[data-accent] .course-module__head h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body[data-accent] .program-module-desc {
+  overflow-wrap: break-word;
 }
 
 h1,
