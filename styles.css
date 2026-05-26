@@ -1,4 +1,3 @@
-/* Кастомные эффекты GLITCH + базовые компоненты (Tailwind подключается через CDN в HTML) */
 
 :root {
   --font-heading: "Unbounded", system-ui, sans-serif;
@@ -20,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Единый контейнер: логотип и контент выровнены по одной левой границе */
 .site-container {
   width: 100%;
   max-width: 80rem;
@@ -42,7 +40,6 @@ body {
   line-height: 1.2;
 }
 
-/* Бургер и мобильное меню */
 .burger-btn {
   display: inline-flex;
   flex-direction: column;
